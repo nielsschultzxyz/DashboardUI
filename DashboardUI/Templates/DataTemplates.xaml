@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModel="clr-namespace:DashboardUI.MVVM.ViewModel"
+                    xmlns:view="clr-namespace:DashboardUI.MVVM.View">
+    
+    <!--HomeView-->
+    <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+        <view:HomeView/>
+    </DataTemplate>
+    
+    <!--DashboardView-->
+    <DataTemplate DataType="{x:Type viewModel:DashboardViewModel}">
+        <view:DashboardView/>
+    </DataTemplate>
+    
+    <!--HelpView-->
+    <DataTemplate DataType="{x:Type viewModel:HelpViewModel}">
+        <view:HelpView/>
+    </DataTemplate>
+    
+    <!--NotificationView-->
+    <DataTemplate DataType="{x:Type viewModel:NotificationViewModel}">
+        <view:NotificationView/>
+    </DataTemplate>
+    
+    <!--SendMessageView-->
+    <DataTemplate DataType="{x:Type viewModel:SendMessageViewModel}">
+        <view:SendMessageView/>
+    </DataTemplate>
+    
+    <!--SettingsView-->
+    <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
+        <view:SettingsView/>
+    </DataTemplate>
+    
+</ResourceDictionary>
